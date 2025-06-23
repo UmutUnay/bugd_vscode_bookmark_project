@@ -1,2 +1,4 @@
-# bugd_vscode_bookmark_project
-Bookmark tab for your libraries
+# BUGD Bookmark Sidebar Project
+Bookmark tab for your libraries and much more!
+
+# Current version: v1.0.0

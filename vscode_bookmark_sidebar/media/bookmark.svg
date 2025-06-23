@@ -1,0 +1,18 @@
+<svg width="800" height="800" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bookmark shape -->
+  <path fill="none" stroke="#000" stroke-width="2" d="M15 1h34v61L32 48 15 62z"/>
+
+  <!-- Computer base -->
+  <rect x="22" y="22" width="20" height="14" fill="none" stroke="#000" stroke-width="1.5"/>
+
+  <!-- Computer stand -->
+  <rect x="30" y="36" width="4" height="2" fill="none" stroke="#000" stroke-width="1"/>
+
+  <!-- Computer base platform -->
+  <rect x="26" y="38" width="12" height="2" fill="none" stroke="#000" stroke-width="1"/>
+
+  <!-- Earth (globe) inside monitor -->
+  <circle cx="32" cy="29" r="5" fill="none" stroke="#000" stroke-width="1"/>
+  <path d="M27 29h10" stroke="#000" stroke-width="0.8"/>
+  <path d="M32 24a7 7 0 0 1 0 10a7 7 0 0 1 0-10z" fill="none" stroke="#000" stroke-width="0.8"/>
+</svg>
