@@ -1,0 +1,76 @@
+{
+  "name": "bugd-bookmark-sidebar",
+  "displayName": "BUGD Bookmark Sidebar Project",
+  "description": "../README.md",
+  "version": "1.0.0",
+  "publisher": "Bugd",
+  "author": "BugD",
+  "license": "AGPL-3.0-only",
+  "repository": "https://github.com/UmutUnay/bugd_vscode_bookmark_project",
+  "engines": {
+    "vscode": "^1.81.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "bookmarkSidebar.openBookmark",
+        "title": "Open Tab"
+      },
+      {
+        "command": "bookmarkSidebar.addBookmark",
+        "title": "Add Bookmark"
+      },
+      {
+        "command": "bookmarkSidebar.removeBookmark",
+        "title": "Remove Bookmark"
+      }
+    ],
+    "menus": {
+      "view/title": [
+        {
+          "command": "bookmarkSidebar.addBookmark",
+          "when": "view == bookmarkSidebar",
+          "group": "navigation"
+        }
+      ],
+      "view/item/context": [
+        {
+          "command": "bookmarkSidebar.removeBookmark",
+          "when": "view == bookmarkSidebar && viewItem == BookmarkedItem",
+          "group": "inline"
+        }
+      ]
+    },
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "bookmarkContainer",
+          "title": "Bookmarks",
+          "icon": "$(bookmark)"
+        }
+      ]
+    },
+    "views": {
+      "bookmarkContainer": [
+        {
+          "id": "bookmarkSidebar",
+          "name": "Bookmarked Tabs",
+          "icon": "$(computer)"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.3",
+    "typescript": "^5.8.3",
+    "vscode": "^1.1.37"
+  }
+}
